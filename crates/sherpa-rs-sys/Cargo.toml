@@ -1,5 +1,5 @@
 [package]
-name = "sherpa-rs-sys"
+name = "chobits-sherpa-rs-sys"
 version = "0.7.0"
 edition = "2021"
 authors = ["thewh1teagle"]

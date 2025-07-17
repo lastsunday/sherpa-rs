@@ -159,6 +159,35 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 
 [[package]]
+name = "chobits-sherpa-rs"
+version = "0.7.0"
+dependencies = [
+ "chobits-sherpa-rs-sys",
+ "clap",
+ "eyre",
+ "hound",
+ "tracing",
+]
+
+[[package]]
+name = "chobits-sherpa-rs-sys"
+version = "0.7.0"
+dependencies = [
+ "bindgen",
+ "bzip2",
+ "cmake",
+ "dirs",
+ "flate2",
+ "glob",
+ "lazy_static",
+ "serde",
+ "serde_json",
+ "sha2",
+ "tar",
+ "ureq",
+]
+
+[[package]]
 name = "clang-sys"
 version = "1.8.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -727,35 +756,6 @@ dependencies = [
  "cfg-if",
  "cpufeatures",
  "digest",
-]
-
-[[package]]
-name = "sherpa-rs"
-version = "0.7.0"
-dependencies = [
- "clap",
- "eyre",
- "hound",
- "sherpa-rs-sys",
- "tracing",
-]
-
-[[package]]
-name = "sherpa-rs-sys"
-version = "0.7.0"
-dependencies = [
- "bindgen",
- "bzip2",
- "cmake",
- "dirs",
- "flate2",
- "glob",
- "lazy_static",
- "serde",
- "serde_json",
- "sha2",
- "tar",
- "ureq",
 ]
 
 [[package]]
